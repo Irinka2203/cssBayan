@@ -5,40 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>cssBayan</title>
 </head>
 
 <body>
-    <header>
-        <h1>CSS Bayan</h1>
-    </header>
-    <main>
-        <section class="accor">
-            <label class="acc-title" for="mem1">New world welcome</label>
-            <input class="acc-input" type="radio" checked id="mem1">
-            <div><img src="img/welcome.png" alt="mem1"></div>
-        </section>
-        <section class="accor">
-            <label class="acc-title" for="mem2">Helping everyone</label>
-            <input class="acc-input" type="radio" id="mem2">
-            <div><img src="img/helper.png" alt="mem2"></div>
-        </section>
-        <section class="accor">
-            <label class="acc-title" for="mem3">Just relax</label>
-            <input class="acc-input" type="radio" id="mem3">
-            <div><img src="img/slothzy.png" alt="mem3"></div>
-        </section>
-        <section class="accor">
-            <label class="acc-title" for="mem4">Hurry up</label>
-            <input class="acc-input" type="radio" id="mem4">
-            <div><img src="img/deadline.png" alt="mem4"></div>
-        </section>
-        <section class="accor">
-            <label class="acc-title" for="mem5">Good job</label>
-            <input class="acc-input" type="radio" id="mem5">
-            <div><img src="img/finish.png" alt="mem5"></div>
-        </section>
-    </main>
+    <div class="wrapper">
+        <header class="header">
+            <h1>CSS Bayan</h1>
+        </header>
+        <main class="main-content">
+            <section class="accor">
+                <div>
+                    <div class="title">
+                        <label class="acc-title" for="mem1">New world welcome</label>
+                    </div>
+                    <input class="acc-input" type="radio" name="mem" checked id="mem1">
+                    <div class="mem-item"><img src="img/welcome.png" alt="mem1"></div>
+                </div>
+            </section>
+            <section class="accor">
+                <div class="title">
+                    <label class="acc-title" for="mem2">Helping everyone</label>
+                </div>
+                <input class="acc-input" type="radio" name="mem" id="mem2">
+                <div class="mem-item"><img src="img/helper.png" alt="mem2"></div>
+            </section>
+            <section class="accor">
+                <div class="title">
+                    <label class="acc-title" for="mem3">Just relax</label>
+                </div>
+                <input class="acc-input" type="radio" name="mem" id="mem3">
+                <div class="mem-item"><img src="img/slothzy.png" alt="mem3"></div>
+            </section>
+            <section class="accor">
+                <div class="title">
+                    <label class="acc-title" for="mem4">Hurry up</label>
+                </div>
+                <input class="acc-input" type="radio" name="mem" id="mem4">
+                <div class="mem-item"><img src="img/deadline.png" alt="mem4"></div>
+            </section>
+            <section class="accor">
+                <div class="title">
+                    <label class="acc-title" for="mem5">Good job</label>
+                </div>
+                <input class="acc-input" type="radio" name="mem" id="mem5">
+                <div class="mem-item"><img src="img/finish.png" alt="mem5"></div>
+            </section>
+        </main>
+    </div>
 </body>
 
 </html>
