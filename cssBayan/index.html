@@ -2,58 +2,85 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>cssBayan</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>cssBayan</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <h1>CSS Bayan</h1>
-        </header>
-        <main class="main-content">
-            <section class="accor">
-                <div>
-                    <div class="title">
-                        <label class="acc-title" for="mem1">New world welcome</label>
-                    </div>
-                    <input class="acc-input" type="radio" name="mem" checked id="mem1">
-                    <div class="mem-item"><img src="img/welcome.png" alt="mem1"></div>
+  <div class="wrapper">
+    <header class="header">
+      <h1>CSS Bayan</h1>
+    </header>
+    <main class="main-content">
+      <div class="container">
+        <section class="accor">
+          <div>
+            <div class="title">
+              <label class="acc-title" for="mem1">
+                <div class="item">
+                  <div class="item-title">New world welcome</div>
+                  <div class="icon">+</div>
                 </div>
-            </section>
-            <section class="accor">
-                <div class="title">
-                    <label class="acc-title" for="mem2">Helping everyone</label>
-                </div>
-                <input class="acc-input" type="radio" name="mem" id="mem2">
-                <div class="mem-item"><img src="img/helper.png" alt="mem2"></div>
-            </section>
-            <section class="accor">
-                <div class="title">
-                    <label class="acc-title" for="mem3">Just relax</label>
-                </div>
-                <input class="acc-input" type="radio" name="mem" id="mem3">
-                <div class="mem-item"><img src="img/slothzy.png" alt="mem3"></div>
-            </section>
-            <section class="accor">
-                <div class="title">
-                    <label class="acc-title" for="mem4">Hurry up</label>
-                </div>
-                <input class="acc-input" type="radio" name="mem" id="mem4">
-                <div class="mem-item"><img src="img/deadline.png" alt="mem4"></div>
-            </section>
-            <section class="accor">
-                <div class="title">
-                    <label class="acc-title" for="mem5">Good job</label>
-                </div>
-                <input class="acc-input" type="radio" name="mem" id="mem5">
-                <div class="mem-item"><img src="img/finish.png" alt="mem5"></div>
-            </section>
-        </main>
-    </div>
+                <input hidden class="acc-input" type="radio" name="mem" checked id="mem1">
+                <div class="mem-item"><img src="img/welcome.png" alt="mem1"></div>
+              </label>
+            </div>
+          </div>
+        </section>
+        <section class="accor">
+          <div class="title">
+            <label class="acc-title" for="mem2">
+              <div class="item">
+                <div>Helping everyone</div>
+                <div class="icon">+</div>
+              </div>
+              <input hidden class="acc-input" type="radio" name="mem" id="mem2">
+              <div class="mem-item"><img src="img/helper.png" alt="mem2"></div>
+            </label>
+          </div>
+        </section>
+        <section class="accor">
+          <div class="title">
+            <label class="acc-title" for="mem3">
+              <div class="item">
+                <div>Just relax</div>
+                <div class="icon">+</div>
+              </div>
+              <input hidden class="acc-input" type="radio" name="mem" id="mem3">
+              <div class="mem-item"><img src="img/slothzy.png" alt="mem3"></div>
+            </label>
+          </div>
+        </section>
+        <section class="accor">
+          <div class="title">
+            <label class="acc-title" for="mem4">
+              <div class="item">
+                <div>Hurry up</div>
+                <div class="icon">+</div>
+              </div>
+              <input hidden class="acc-input" type="radio" name="mem" id="mem4">
+              <div class="mem-item"><img src="img/deadline.png" alt="mem4"></div>
+            </label>
+          </div>
+        </section>
+        <section class="accor">
+          <div class="title">
+            <label class="acc-title" for="mem5">
+              <div class="item">
+                <div>Good job</div>
+                <div class="icon">+</div>
+              </div>
+              <input hidden class="acc-input" type="radio" name="mem" id="mem5">
+              <div class="mem-item"><img src="img/finish.png" alt="mem5"></div>
+            </label>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
 </body>
 
 </html>

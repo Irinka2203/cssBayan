@@ -4,9 +4,10 @@ body{
 }
 
 .wrapper{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     padding: 0 2em;
+    
 }
 
 .header{
@@ -21,28 +22,107 @@ body{
     align-items: center;
 }
 
+.accor{
+    cursor: pointer;
+}
+
 .title{
     width: 31em;
 }
 
 .acc-title{
-    
     font-size: 2em;
-    color: blue;
+    font-weight: 600;
+    color: blue; 
+    cursor: pointer;
 }
 
 .img{
+    width: 100%;
     margin: 0 auto;
 }
 
+.item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon  {
+    width: 1em;
+    height: 1em;
+    color: #000;
+    opacity: 0;
+}
+
+ .container:hover .icon{
+    opacity: 1;
+    transition: 0.5s;
+ }
+
+ .title:hover .icon {
+    transform: rotate(45deg);
+}
+
+ .container:hover .acc-title{
+    color: #000;
+ }
+ 
 .mem-item{
     width: 100%;
     margin: 0;
     display: none;
+    opacity: 0;
+}
+
+.title:hover  .mem-item{
+    display: block;
+    opacity: 1;
+    cursor: pointer;
+    animation: memShow 1s ease-in-out;
 }
 
 .acc-input:checked+.mem-item{
     display: block;
+    opacity: 1;
+    animation: memShow 0.8s ease-in-out;
+    cursor: pointer;
+    
+}
+
+@keyframes memShow{
+    0%{
+        display: none;
+        opacity: 0;
+    }
+    1%{
+        display: block;
+        opacity: 0;
+    }
+    100%{
+        display: block;
+        opacity: 1;
+    }
+}
+
+.mem-item:active{
+    opacity: 0.5 !important;
+    transition: 0.8s;
+}
+
+.acc-title:has(.acc-input:checked){
+    color: #000;
+}
+
+
+
+@media (max-width: 820px) {
+   .acc-title{
+    font-size: 1.2em;
+   } 
+   
+   .accor{
+    cursor: none;
+   }
 }
 
 @media (max-width: 320px) {
@@ -50,6 +130,9 @@ body{
         width: 17em;
     }
     
+    .acc-title{
+        font-size: 1em;
+    }
     .mem-item{
         width: 200px;
     }
